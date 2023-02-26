@@ -17,4 +17,10 @@ describe("Tests for Header Component",()=>{
         expect(getByText(mockText)).not.toBeNull();
     });
 
+    it("alternative way using toBeInTheDocument", () => {
+        const mockText = "This is the string for testing";
+        const { getByText } = render(<Header text={mockText} />);
+        expect(getByText(mockText)).toBeInTheDocument;
+      });
+    
 });
