@@ -1,0 +1,10 @@
+button{
+    width: 10vw;
+    margin-top: 1.3rem;
+    border-radius: 100rem;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+}
